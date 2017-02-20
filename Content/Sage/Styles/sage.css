@@ -13404,6 +13404,22 @@ body.IsPreview .container-fluid {
 /*Base colors*/
 /*Page Default Colours*/
 /*Base Variables*/
+#page_header_nav.navbar-sage .nav-pills-sage.header-right li a {
+  color: #003348;
+  font-family: AdelleSansSAGE; }
+
+#page_header_nav.navbar-sage .nav-pills-sage li a {
+  color: #003348;
+  font-family: AdelleSansSAGE; }
+
+#page_header_nav.navbar-sage .nav-pills-sage li i {
+  margin-left: 10px; }
+
+/*Main Site Sass*/
+/*common variables*/
+/*Base colors*/
+/*Page Default Colours*/
+/*Base Variables*/
 #side_nav {
   background-image: -ms-linear-gradient(top, #003348, #23556b) ;
   /* For Safari 5.1 to 6.0 */
@@ -13453,9 +13469,13 @@ body.IsPreview .container-fluid {
         width: 13px;
         height: 13px; }
       #side_nav #page_side_nav .drawer > ul > li.inner-level ul li {
-        border: none; }
+        border: none;
+        min-height: 0; }
         #side_nav #page_side_nav .drawer > ul > li.inner-level ul li a {
-          padding: 9px 52px; }
+          padding: 7px 52px 7px 62px;
+          font-size: 16px; }
+      #side_nav #page_side_nav .drawer > ul > li.inner-level ul li:last-child {
+        margin-bottom: 16px; }
     #side_nav #page_side_nav .drawer > ul > li.sub-section {
       min-height: 44px; }
       #side_nav #page_side_nav .drawer > ul > li.sub-section a {

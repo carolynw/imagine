@@ -1,0 +1,19 @@
+﻿@import '_ux2_colours';
+
+#page_header_nav.navbar-sage {
+  .nav-pills-sage.header-right li a{
+    color: $ux2-slate-dark;
+    font-family: AdelleSansSAGE;
+  }
+
+  .nav-pills-sage li {
+    a {
+      color: $ux2-slate-dark;
+      font-family: AdelleSansSAGE;
+    }
+
+    i {
+      margin-left:10px;
+    }
+  }
+}

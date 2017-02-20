@@ -61,15 +61,22 @@
 
         ul li {
           border: none;
+          min-height:0;
 
           a {
-            padding: 9px 52px;
+            padding: 7px 52px 7px 62px;
+            font-size:16px;
           }
+        }
+
+        ul li:last-child {
+          margin-bottom:16px;
         }
       }
 
       > li.sub-section {
         min-height: 44px;
+
         a {
           font-weight: normal;
           min-height: 0;
