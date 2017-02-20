@@ -13405,9 +13405,6 @@ body.IsPreview .container-fluid {
 /*Page Default Colours*/
 /*Base Variables*/
 #side_nav {
-  background-color: #23556b; }
-
-#side_nav #page_side_nav_content {
   background-image: -ms-linear-gradient(top, #003348, #23556b) ;
   /* For Safari 5.1 to 6.0 */
   background-image: -webkit-linear-gradient(top, #003348, #23556b) ;
@@ -13417,8 +13414,51 @@ body.IsPreview .container-fluid {
   background-image: -moz-linear-gradient(bottom, #003348, #23556b) ;
   /* For Firefox 3.6 to 15 */
   background-image: linear-gradient(to bottom, #003348, #23556b) ;
-  /* Standard syntax */ }
-
-#side_nav #page_side_nav ul li:first-child .navbar-sage-brand {
-  margin: 15px 0 0 0;
-  float: none; }
+  /* Standard syntax */
+  font-family: AdelleSAGE;
+  font-size: 18px;
+  width: 320px; }
+  #side_nav #page_side_nav {
+    width: 100%; }
+    #side_nav #page_side_nav a {
+      color: #fff; }
+    #side_nav #page_side_nav .drawer > ul > li:first-child {
+      text-align: center;
+      margin-bottom: 25px;
+      border-bottom: 1px solid #00dc00; }
+      #side_nav #page_side_nav .drawer > ul > li:first-child .navbar-sage-brand {
+        margin: 20px 0 0 0;
+        float: none;
+        min-width: 0;
+        min-height: 0; }
+      #side_nav #page_side_nav .drawer > ul > li:first-child .navbar-close {
+        position: absolute;
+        padding: 20px; }
+      #side_nav #page_side_nav .drawer > ul > li:first-child img {
+        float: none;
+        margin: 0; }
+    #side_nav #page_side_nav .drawer > ul > li {
+      border-bottom: none; }
+      #side_nav #page_side_nav .drawer > ul > li a {
+        padding: 9px 52px; }
+    #side_nav #page_side_nav .drawer > ul > li.inner-level {
+      border-bottom: none;
+      border-top: 1px solid #176e83;
+      width: 165px;
+      font-weight: normal; }
+      #side_nav #page_side_nav .drawer > ul > li.inner-level .chevron-right {
+        position: absolute;
+        border-color: #00dc00;
+        left: 20px;
+        width: 13px;
+        height: 13px; }
+      #side_nav #page_side_nav .drawer > ul > li.inner-level ul li {
+        border: none; }
+        #side_nav #page_side_nav .drawer > ul > li.inner-level ul li a {
+          padding: 9px 52px; }
+    #side_nav #page_side_nav .drawer > ul > li.sub-section {
+      min-height: 44px; }
+      #side_nav #page_side_nav .drawer > ul > li.sub-section a {
+        font-weight: normal;
+        min-height: 0;
+        padding: 9px 52px; }
