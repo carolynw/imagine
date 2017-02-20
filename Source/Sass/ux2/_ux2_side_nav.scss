@@ -1,0 +1,23 @@
+﻿@import '_ux2_colours';
+
+#side_nav {
+    background-color:$ux2-slate-light;
+}
+
+#side_nav #page_side_nav_content {
+    @include linear-v-gradient(rgba($ux2-slate-dark, 1.0), rgba($ux2-slate-light, 1.0));
+}
+
+//#side_nav #page_side_nav ul li:first-child {
+//    text-align:center;
+//}
+//
+#side_nav #page_side_nav ul li:first-child .navbar-sage-brand {
+    margin:15px 0 0 0;
+    float:none;
+}
+//
+//#side_nav #page_side_nav ul li:first-child a:first-child {
+//    min-width:0;
+//    float:left;
+//}
