@@ -14,34 +14,22 @@
     }
 
     .drawer > ul {
-
       > li:first-child {
-        text-align: center;
-        margin-bottom: 25px;
-        border-bottom: 1px solid $ux2-sage-green;
+        min-height:0;
+      }
 
-        .navbar-sage-brand {
-          margin: 20px 0 0 0;
-          float: none;
-          min-width: 0;
-          min-height: 0;
-        }
-
-        .navbar-close {
-          position: absolute;
-          padding: 20px;
-        }
-        img {
-          float: none;
-          margin: 0;
-        }
+      > li:last-child {
+        margin-bottom: 15px;
       }
 
       > li {
         border-bottom: none;
+        min-height: 0;
 
         a {
-          padding: 9px 52px;
+          padding: 6px 52px;
+          min-width:250px;
+          min-height: 0;
         }
       }
 
@@ -84,5 +72,66 @@
         }
       }
     }
+
+    .secondary-nav {
+      li {
+        width: 165px;
+
+        a {
+          min-width: 250px;
+        }
+      }
+      li:first-child {
+        border-top: 2px solid $ux2-sage-green;
+      }
+
+      li:last-child {
+        border-bottom: 2px solid $ux2-sage-green;
+      }
+    }
+  }
+}
+
+#side_nav_header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid $ux2-sage-green;
+  min-height:70px;
+
+  .navbar-sage-brand {
+    display:inline-block;
+    float: none;
+    width: 80px;
+    height: 32px;
+    margin: 20px 0 0 0;
+    background: url('/Content/Sage/Images/sage_logo_green.svg') no-repeat center center;
+  }
+
+  .navbar-close {
+    position: absolute;
+    padding: 20px;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#side_nav_footer {
+  text-align: center;
+  margin-top:26px;
+
+  i {
+    width:32px;
+    height:32px;
+    margin: 0 4px;
+    font-size:18px;
+    padding-top:10px;
+    border-radius:50%;
+    background:#f5f5f5;
+    color:$ux2-slate-dark;
+  }
+
+  .copyright{
+    margin-top:20px;
+    font-size: 14px;
   }
 }

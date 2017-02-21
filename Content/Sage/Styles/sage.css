@@ -13439,24 +13439,16 @@ body.IsPreview .container-fluid {
     #side_nav #page_side_nav a {
       color: #fff; }
     #side_nav #page_side_nav .drawer > ul > li:first-child {
-      text-align: center;
-      margin-bottom: 25px;
-      border-bottom: 1px solid #00dc00; }
-      #side_nav #page_side_nav .drawer > ul > li:first-child .navbar-sage-brand {
-        margin: 20px 0 0 0;
-        float: none;
-        min-width: 0;
-        min-height: 0; }
-      #side_nav #page_side_nav .drawer > ul > li:first-child .navbar-close {
-        position: absolute;
-        padding: 20px; }
-      #side_nav #page_side_nav .drawer > ul > li:first-child img {
-        float: none;
-        margin: 0; }
+      min-height: 0; }
+    #side_nav #page_side_nav .drawer > ul > li:last-child {
+      margin-bottom: 15px; }
     #side_nav #page_side_nav .drawer > ul > li {
-      border-bottom: none; }
+      border-bottom: none;
+      min-height: 0; }
       #side_nav #page_side_nav .drawer > ul > li a {
-        padding: 9px 52px; }
+        padding: 6px 52px;
+        min-width: 250px;
+        min-height: 0; }
     #side_nav #page_side_nav .drawer > ul > li.inner-level {
       border-bottom: none;
       border-top: 1px solid #176e83;
@@ -13482,3 +13474,45 @@ body.IsPreview .container-fluid {
         font-weight: normal;
         min-height: 0;
         padding: 9px 52px; }
+    #side_nav #page_side_nav .secondary-nav li {
+      width: 165px; }
+      #side_nav #page_side_nav .secondary-nav li a {
+        min-width: 250px; }
+    #side_nav #page_side_nav .secondary-nav li:first-child {
+      border-top: 2px solid #00dc00; }
+    #side_nav #page_side_nav .secondary-nav li:last-child {
+      border-bottom: 2px solid #00dc00; }
+
+#side_nav_header {
+  text-align: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #00dc00;
+  min-height: 70px; }
+  #side_nav_header .navbar-sage-brand {
+    display: inline-block;
+    float: none;
+    width: 80px;
+    height: 32px;
+    margin: 20px 0 0 0;
+    background: url("/Content/Sage/Images/sage_logo_green.svg") no-repeat center center; }
+  #side_nav_header .navbar-close {
+    position: absolute;
+    padding: 20px;
+    left: 0px;
+    top: 0px; }
+
+#side_nav_footer {
+  text-align: center;
+  margin-top: 26px; }
+  #side_nav_footer i {
+    width: 32px;
+    height: 32px;
+    margin: 0 4px;
+    font-size: 18px;
+    padding-top: 10px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    color: #003348; }
+  #side_nav_footer .copyright {
+    margin-top: 20px;
+    font-size: 14px; }
