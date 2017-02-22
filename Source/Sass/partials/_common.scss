@@ -45,7 +45,7 @@ body {
     background-color: $page-background-color;
     font-size: 16px;
     line-height: 1.7em;
-    font-family: AdelleSansSAGETh, sans-serif;
+    font-family: $default-font;
     height: 100%;
     text-rendering: optimizeLegibility;
 
@@ -72,6 +72,15 @@ body {
         padding-top: $default-padding-fixed-val;
     }
 
+    .with-tick {
+        list-style-type: none;
+        padding-left:30px;
+        li:before {    
+            font-family: 'FontAwesome';
+            content: '\f00c';
+            margin:0 15px 0 -30px;
+        }
+    }
 
     .nav-pills-sage {
         li {

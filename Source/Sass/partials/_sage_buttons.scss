@@ -257,7 +257,8 @@
 .button-green-solid-block-invert,
 .button-blue-solid-block-invert,
 .button-pink-solid-block-invert,
-.button-black-block-invert {
+.button-black-block-invert,
+.button-learnmore {
     @media(max-width:$screen-xs-max){
         width:100%;
     }
@@ -286,6 +287,8 @@
 
     &:hover, &:active, &:focus, &:visited {
          text-decoration:none;
+         color:$brand-white;
+         @include default-shadow-hover;
     }
 
     &:before {
@@ -425,7 +428,8 @@
 .button-green-block-back,
 .button-blue-block-back,
 .button-pink-block-back,
-.button-black-block-back{
+.button-black-block-back,
+.button-learnmore {
     width: 100%;
     padding: 12px 70px 12px 12px;
       
@@ -495,6 +499,13 @@
     }
 }
 
+//feature specific buttons
+.button-learnmore {
+    border-color: $brand-med-blue;
+    background-color: $brand-med-blue;
+    color: $brand-white;
+    @include linear-h-gradient($brand-dark-blue, $brand-med-blue);
+}
 
 // font-family: "FontAwesome";
 //content: "\f08e";

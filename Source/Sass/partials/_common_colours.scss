@@ -1,6 +1,7 @@
 ﻿/*Base colors*/
 $brand-azul: #004089;
 $brand-light-azul: #156E96;
+$brand-lightest-azul: lighten($brand-light-azul, 25%);
 $brand-dark-azul: #003261;
 
 $brand-slate: #243741;

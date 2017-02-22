@@ -50,7 +50,7 @@
                                 opacity: 0.33;
                                 transition: $default-transition-time ease;
 
-                                @media(max-width:$screen-xs-max) {
+                                @media(max-width:$screen-sm-max) {
                                     display: none;
                                 }
 
@@ -61,7 +61,7 @@
                                     top:50%;
                                     margin-top:-25px;
 
-                                    @media(max-width:$screen-xs-max) {
+                                    @media(max-width:$screen-sm-max) {
                                         display: inline-block;
 
                                         &.disabled {
@@ -73,8 +73,8 @@
                                     &.btnNext {
                                         right:0;
                                     }
-                                    &.btnPrev {
-
+                                    &.btnPrevious {
+                                            left: 0;
                                     }
 
                                     transform: translateY(10px);
@@ -91,7 +91,7 @@
                                     transition: $default-transition-time ease;
                                     opacity: 1.0;
 
-                                    @media(max-width:$screen-xs-max) {
+                                    @media(max-width:$screen-sm-max) {
                                         display: inline-block;
                                         margin: 0 auto;
                                     }
