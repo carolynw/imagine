@@ -190,18 +190,22 @@
               padding: 6px 52px;
               margin: 0;
               cursor: pointer;
+              position:relative;
 
-              .chevron-right {
+              &:after{
+                content:"";
+                display:block;
                 border-top: 2px solid $ux2-sage-green;
                 border-right: 2px solid $ux2-sage-green;
                 transform: rotate(45deg);
                 position: absolute;
                 width: 13px;
                 height: 13px;
-                top: 14px;
-                left: 16px;
+                top: 0px;
+                left: 0px;
                 bottom: 0;
                 right: 0;
+                margin:auto 0;
               }
             }
 
