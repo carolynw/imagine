@@ -13548,6 +13548,9 @@ body.IsPreview .container-fluid {
   min-height: auto; }
 
 /* ux2 overrides*/
+.ux2-slate-light-bg {
+  background-color: #177286; }
+
 #page_header_nav.navbar-sage .nav-pills-sage.header-right li a {
   color: #021e26;
   font-family: AdelleSansSAGE; }
