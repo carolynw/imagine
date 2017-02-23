@@ -13583,10 +13583,10 @@ body.IsPreview .container-fluid {
   bottom: 0;
   right: 0;
   z-index: 9999;
-  margin: 0;
   position: fixed;
   overflow: hidden;
   height: 0;
+  margin: 0;
   transition: 0.5s; }
   #ux2_side_nav.open {
     overflow-y: auto;
@@ -13676,6 +13676,10 @@ body.IsPreview .container-fluid {
       #ux2_side_nav #ux2_side_nav_content .body ul {
         padding-left: 0;
         list-style: none; }
+
+@media (min-width: 992px) and (max-height: 440px) {
+  #ux2_side_nav #ux2_side_nav_content .body {
+    position: static; } }
 
 @media (max-width: 991px) {
   #ux2_side_nav {
