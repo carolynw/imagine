@@ -13800,7 +13800,39 @@ body.IsPreview .container-fluid {
           display: block;
           font-size: 14px; } }
 
-/*Main Site Sass*/
+.content-widget.explore {
+  text-align: center; }
+  .content-widget.explore .header {
+    margin-bottom: 35px; }
+    .content-widget.explore .header p {
+      font-size: 14px; }
+  .content-widget.explore .areas a {
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    height: 52px;
+    line-height: 52px;
+    white-space: nowrap; }
+    .content-widget.explore .areas a img {
+      float: left;
+      margin-right: 15px;
+      width: 52px;
+      height: 52px; }
+  .content-widget.explore .areas .row > div {
+    margin-bottom: 15px; }
+  .content-widget.explore .growth a {
+    max-width: 240px;
+    margin-bottom: 20px; }
+  .content-widget.explore .industries a {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    .content-widget.explore .industries a img {
+      width: 52px;
+      height: 52px;
+      display: block;
+      margin: 0 auto 5px; }
+
 /*common variables*/
 /*Base colors*/
 /*Page Default Colours*/
