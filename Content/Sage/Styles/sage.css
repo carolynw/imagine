@@ -11434,15 +11434,17 @@ body {
 .content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .as-table {
   width: 100%; }
 
-.content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile .as-table-row:nth-last-child(-n+2) .as-table-cell {
-  border-bottom: 1px dashed #858780; }
-
-.content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile .as-table-row:last-child .as-table-cell {
-  border-bottom: none;
-  padding: 0 15px; }
-
-.content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile .as-table-cell {
-  width: 50%; }
+.content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile {
+  display: none; }
+  .content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile .as-table-row:nth-last-child(-n+2) .as-table-cell {
+    border-bottom: 1px dashed #858780; }
+  .content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile .as-table-row:last-child .as-table-cell {
+    border-bottom: none;
+    padding: 0 15px; }
+  .content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile .as-table-cell {
+    width: 50%; }
+  .content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .slider-mobile.active {
+    display: block; }
 
 .content-widget.product-filter-module .content-widget-inner .wrapper .filter-module-content .filter-module-results-table .mobile-table-header {
   padding: 0;
@@ -13546,52 +13548,40 @@ body.IsPreview .container-fluid {
   min-height: auto; }
 
 /* ux2 overrides*/
-/*Main Site Sass*/
-/*common variables*/
-/*Base colors*/
-/*Page Default Colours*/
-/*Base Variables*/
-/*Main Site Sass*/
-/*common variables*/
-/*Base colors*/
-/*Page Default Colours*/
-/*Base Variables*/
 #page_header_nav.navbar-sage .nav-pills-sage.header-right li a {
-  color: #003348;
+  color: #021e26;
   font-family: AdelleSansSAGE; }
 
 #page_header_nav.navbar-sage .nav-pills-sage li a {
-  color: #003348;
+  color: #021e26;
   font-family: AdelleSansSAGE; }
 
 #page_header_nav.navbar-sage .nav-pills-sage li i {
   margin-left: 10px; }
 
-/*Main Site Sass*/
-/*common variables*/
-/*Base colors*/
-/*Page Default Colours*/
-/*Base Variables*/
 .no-scroll {
   overflow: hidden; }
 
 #ux2_side_nav {
-  background-image: -ms-linear-gradient(top, #22404b, #003348) ;
+  background-image: -ms-linear-gradient(top, #177286, #003349) ;
   /* For Safari 5.1 to 6.0 */
-  background-image: -webkit-linear-gradient(top, #22404b, #003348) ;
+  background-image: -webkit-linear-gradient(top, #177286, #003349) ;
   /* For Safari 5.1 to 6.0 */
-  background-image: -o-linear-gradient(bottom, #22404b, #003348) ;
+  background-image: -o-linear-gradient(bottom, #177286, #003349) ;
   /* For Opera 11.1 to 12.0 */
-  background-image: -moz-linear-gradient(bottom, #22404b, #003348) ;
+  background-image: -moz-linear-gradient(bottom, #177286, #003349) ;
   /* For Firefox 3.6 to 15 */
-  background-image: linear-gradient(to bottom, #22404b, #003348) ;
+  background-image: linear-gradient(to bottom, #177286, #003349) ;
   /* Standard syntax */
-  position: fixed;
+  position: absolute;
+  margin: auto;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 9999;
+  margin: 0;
+  position: fixed;
   overflow: hidden;
   height: 0;
   transition: 0.5s; }
@@ -13603,7 +13593,8 @@ body.IsPreview .container-fluid {
     position: static;
     color: #ffffff;
     font-family: AdelleSansSAGE;
-    font-size: 14px; }
+    font-size: 14px;
+    height: 100%; }
     #ux2_side_nav #ux2_side_nav_content a {
       color: #ffffff; }
       #ux2_side_nav #ux2_side_nav_content a:hover {
@@ -13632,161 +13623,175 @@ body.IsPreview .container-fluid {
           margin-right: 0; }
       #ux2_side_nav #ux2_side_nav_content .header i {
         margin-left: 10px; }
-    #ux2_side_nav #ux2_side_nav_content .body .top {
-      display: none; }
-    #ux2_side_nav #ux2_side_nav_content .body .main .section {
-      width: 24%;
-      padding: 0 0.5%;
-      float: left; }
-      #ux2_side_nav #ux2_side_nav_content .body .main .section .section-header {
-        display: block;
-        font-size: 20px;
-        margin-bottom: 8px;
-        cursor: default; }
-      #ux2_side_nav #ux2_side_nav_content .body .main .section ul li a {
-        color: #CBCBC9; }
-        #ux2_side_nav #ux2_side_nav_content .body .main .section ul li a:hover {
-          color: #ffffff; }
-    #ux2_side_nav #ux2_side_nav_content .body .social {
-      font-size: 16px; }
-      #ux2_side_nav #ux2_side_nav_content .body .social:after {
-        content: "";
-        border-left: 2px solid #001e34;
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 80%; }
-      #ux2_side_nav #ux2_side_nav_content .body .social li {
-        margin-bottom: 8px; }
-      #ux2_side_nav #ux2_side_nav_content .body .social i {
-        text-align: center;
-        width: 24px;
-        height: 24px;
-        margin: 4px 8px 4px 0;
-        font-size: 14px;
-        padding-top: 7px;
-        border-radius: 50%;
-        background: #f5f5f5;
-        color: #003348; }
-      #ux2_side_nav #ux2_side_nav_content .body .social .copyright {
-        display: none;
-        color: #CBCBC9; }
-    #ux2_side_nav #ux2_side_nav_content .body ul {
-      padding-left: 0;
-      list-style: none; }
+    #ux2_side_nav #ux2_side_nav_content .body {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 235px; }
+      #ux2_side_nav #ux2_side_nav_content .body .top {
+        display: none; }
+      #ux2_side_nav #ux2_side_nav_content .body .main .section {
+        width: 24%;
+        padding: 0 0.5%;
+        float: left; }
+        #ux2_side_nav #ux2_side_nav_content .body .main .section .section-header {
+          display: block;
+          font-size: 20px;
+          margin-bottom: 8px;
+          cursor: default; }
+        #ux2_side_nav #ux2_side_nav_content .body .main .section ul li a {
+          color: #CBCBC9; }
+          #ux2_side_nav #ux2_side_nav_content .body .main .section ul li a:hover {
+            color: #ffffff; }
+      #ux2_side_nav #ux2_side_nav_content .body .social {
+        font-size: 16px; }
+        #ux2_side_nav #ux2_side_nav_content .body .social:after {
+          content: "";
+          border-left: 2px solid #021e26;
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 80%; }
+        #ux2_side_nav #ux2_side_nav_content .body .social li {
+          margin-bottom: 8px; }
+        #ux2_side_nav #ux2_side_nav_content .body .social i {
+          text-align: center;
+          width: 24px;
+          height: 24px;
+          margin: 4px 8px 4px 0;
+          font-size: 14px;
+          padding-top: 7px;
+          border-radius: 50%;
+          background: #f5f5f5;
+          color: #003349; }
+        #ux2_side_nav #ux2_side_nav_content .body .social .copyright {
+          display: none;
+          color: #CBCBC9; }
+      #ux2_side_nav #ux2_side_nav_content .body ul {
+        padding-left: 0;
+        list-style: none; }
 
 @media (max-width: 991px) {
   #ux2_side_nav {
-    background-image: -ms-linear-gradient(top, #003348, #22404b) ;
+    background-image: -ms-linear-gradient(top, #003349, #177286) ;
     /* For Safari 5.1 to 6.0 */
-    background-image: -webkit-linear-gradient(top, #003348, #22404b) ;
+    background-image: -webkit-linear-gradient(top, #003349, #177286) ;
     /* For Safari 5.1 to 6.0 */
-    background-image: -o-linear-gradient(bottom, #003348, #22404b) ;
+    background-image: -o-linear-gradient(bottom, #003349, #177286) ;
     /* For Opera 11.1 to 12.0 */
-    background-image: -moz-linear-gradient(bottom, #003348, #22404b) ;
+    background-image: -moz-linear-gradient(bottom, #003349, #177286) ;
     /* For Firefox 3.6 to 15 */
-    background-image: linear-gradient(to bottom, #003348, #22404b) ;
+    background-image: linear-gradient(to bottom, #003349, #177286) ;
     /* Standard syntax */
     height: 100%;
     width: 0; }
-    #ux2_side_nav #ux2_side_nav_content {
-      font-family: AdelleSAGE; }
-      #ux2_side_nav #ux2_side_nav_content ul li a {
-        display: block;
-        padding: 6px 52px; }
-      #ux2_side_nav #ux2_side_nav_content .header {
-        border-bottom: 1px solid #00dc00; }
-        #ux2_side_nav #ux2_side_nav_content .header .section {
-          display: none; }
-      #ux2_side_nav #ux2_side_nav_content .body {
-        max-width: 320px;
+    #ux2_side_nav #ux2_side_nav_content ul li a {
+      display: block;
+      padding: 6px 52px; }
+    #ux2_side_nav #ux2_side_nav_content .header {
+      border-bottom: 1px solid #28a3da; }
+      #ux2_side_nav #ux2_side_nav_content .header .section {
+        display: none; }
+    #ux2_side_nav #ux2_side_nav_content .body {
+      max-width: 320px;
+      padding: 0;
+      margin: 0;
+      position: static;
+      height: auto; }
+      #ux2_side_nav #ux2_side_nav_content .body .top {
         padding: 0;
-        margin: 0; }
-        #ux2_side_nav #ux2_side_nav_content .body .top {
+        display: block;
+        font-size: 18px; }
+      #ux2_side_nav #ux2_side_nav_content .body .main {
+        padding: 0; }
+        #ux2_side_nav #ux2_side_nav_content .body .main .section {
+          float: none;
           padding: 0;
-          display: block;
-          font-size: 18px; }
-        #ux2_side_nav #ux2_side_nav_content .body .main {
-          padding: 0; }
-          #ux2_side_nav #ux2_side_nav_content .body .main .section {
-            float: none;
-            padding: 0;
-            width: 100%;
-            position: relative; }
-            #ux2_side_nav #ux2_side_nav_content .body .main .section .section-header {
-              padding: 6px 52px;
-              margin: 0;
-              cursor: pointer;
-              position: relative; }
-              #ux2_side_nav #ux2_side_nav_content .body .main .section .section-header:after {
-                content: "";
-                display: block;
-                border-top: 2px solid #00dc00;
-                border-right: 2px solid #00dc00;
-                transform: rotate(45deg);
-                position: absolute;
-                width: 13px;
-                height: 13px;
-                top: 0px;
-                left: 0px;
-                bottom: 0;
-                right: 0;
-                margin: auto 0; }
-            #ux2_side_nav #ux2_side_nav_content .body .main .section:after {
+          width: 100%;
+          position: relative; }
+          #ux2_side_nav #ux2_side_nav_content .body .main .section .section-header {
+            padding: 6px 52px;
+            margin: 0;
+            cursor: pointer;
+            position: relative;
+            font-size: 18px; }
+            #ux2_side_nav #ux2_side_nav_content .body .main .section .section-header:after {
+              position: absolute;
+              margin: auto;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              content: "";
+              display: block;
+              border-top: 2px solid #28a3da;
+              border-right: 2px solid #28a3da;
+              transform: rotate(45deg);
+              width: 13px;
+              height: 13px;
+              margin: auto 24px; }
+          #ux2_side_nav #ux2_side_nav_content .body .main .section:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 180px;
+            border-top: 1px solid #8ab7c2; }
+          #ux2_side_nav #ux2_side_nav_content .body .main .section:last-child {
+            margin-bottom: 10px; }
+          #ux2_side_nav #ux2_side_nav_content .body .main .section > ul {
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            margin: 0; }
+            #ux2_side_nav #ux2_side_nav_content .body .main .section > ul > li a {
+              padding-left: 65px; }
+          #ux2_side_nav #ux2_side_nav_content .body .main .section.open > ul {
+            opacity: 1;
+            height: auto;
+            margin-bottom: 15px; }
+      #ux2_side_nav #ux2_side_nav_content .body .social {
+        padding: 0;
+        font-size: 16px; }
+        #ux2_side_nav #ux2_side_nav_content .body .social:after {
+          border: none; }
+        #ux2_side_nav #ux2_side_nav_content .body .social > ul > li {
+          position: relative;
+          margin: 0; }
+          #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:first-child {
+            padding-top: 10px; }
+            #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:first-child:after {
               content: "";
               position: absolute;
               left: 0;
               top: 0;
-              width: 180px;
-              border-top: 1px solid #176e83; }
-            #ux2_side_nav #ux2_side_nav_content .body .main .section:last-child {
-              margin-bottom: 10px; }
-            #ux2_side_nav #ux2_side_nav_content .body .main .section > ul {
-              height: 0;
-              opacity: 0;
-              overflow: hidden;
-              transition: 0.5s; }
-            #ux2_side_nav #ux2_side_nav_content .body .main .section.open > ul {
-              opacity: 1;
-              height: 100%; }
-        #ux2_side_nav #ux2_side_nav_content .body .social {
-          padding: 0;
-          font-size: 18px; }
-          #ux2_side_nav #ux2_side_nav_content .body .social:after {
-            border: none; }
-          #ux2_side_nav #ux2_side_nav_content .body .social > ul > li {
-            position: relative;
-            margin: 0; }
-            #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:first-child {
-              padding-top: 10px; }
-              #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:first-child:after {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 165px;
-                border-top: 2px solid #00dc00; }
-            #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:last-child {
-              padding-bottom: 10px; }
-              #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:last-child:after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 165px;
-                border-bottom: 2px solid #00dc00; }
-          #ux2_side_nav #ux2_side_nav_content .body .social > div {
-            text-align: center;
-            margin-top: 20px; }
-          #ux2_side_nav #ux2_side_nav_content .body .social i {
-            width: 32px;
-            height: 32px;
-            margin: 0 4px;
-            font-size: 18px;
-            padding-top: 10px; }
-          #ux2_side_nav #ux2_side_nav_content .body .social .copyright {
-            display: block;
-            font-size: 14px; } }
+              width: 165px;
+              border-top: 2px solid #28a3da; }
+          #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:last-child {
+            padding-bottom: 10px; }
+            #ux2_side_nav #ux2_side_nav_content .body .social > ul > li:last-child:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 165px;
+              border-bottom: 2px solid #28a3da; }
+        #ux2_side_nav #ux2_side_nav_content .body .social > div {
+          text-align: center;
+          margin-top: 20px; }
+        #ux2_side_nav #ux2_side_nav_content .body .social i {
+          width: 32px;
+          height: 32px;
+          margin: 0 4px;
+          font-size: 18px;
+          padding-top: 10px; }
+        #ux2_side_nav #ux2_side_nav_content .body .social .copyright {
+          display: block;
+          font-size: 14px; } }
 
 /*Main Site Sass*/
 /*common variables*/

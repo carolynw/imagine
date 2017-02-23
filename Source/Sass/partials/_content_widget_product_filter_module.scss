@@ -469,7 +469,7 @@
                         }
 
                         .slider-mobile {
-
+                            display:none;
                             .as-table-row {
                                 &:nth-last-child(-n+2) {
                                     .as-table-cell {
@@ -487,6 +487,9 @@
 
                             .as-table-cell {
                                 width: 50%;
+                            }
+                            &.active {
+                                display:block;
                             }
                         }
 
