@@ -70,11 +70,4 @@
       logError: logError
     }
   }());
-
-  $(function () {
-    //todo: this is temporary hack to get around the 'angular include' issue in the frontend project
-    setTimeout(function(){
-      sageApp.init();
-    }, 250);
-  });
 }(window));
