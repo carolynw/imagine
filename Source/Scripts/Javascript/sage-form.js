@@ -6,6 +6,8 @@ sageApp.modules.register("form", function ($) {
   "use strict";
 
   function init() {
+    focusHelper();
+
     if (!$(".request-form").length)
       return;
 
@@ -30,6 +32,16 @@ sageApp.modules.register("form", function ($) {
           $(this).removeClass("filled");
         }
       });
+    });
+  }
+
+  function focusHelper(){
+    $("form").on("focus", "input", function(){
+      $(this).closest("label").addClass("focus-within");
+    });
+
+    $("form").on("blur", "input", function(){
+      $(this).closest("label").removeClass("focus-within");
     });
   }
 

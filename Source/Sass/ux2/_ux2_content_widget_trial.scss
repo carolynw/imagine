@@ -1,0 +1,90 @@
+﻿@import '../partials/common_mixins';
+@import '_ux2_colours';
+
+.content-widget.trial {
+  form {
+    margin: 50px 0;
+
+    label {
+      margin-bottom: 40px;
+
+      &.focus-within {
+        color: $ux2-fuchsia;
+      }
+
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid $ux2-black;
+
+        &:focus {
+          outline: none;
+          border-bottom-color: $ux2-fuchsia;
+        }
+      }
+
+      input[type="checkbox"] {
+        visibility: hidden;
+        position: relative;
+        display: block;
+        width: 50px;
+        float: left;
+        height: 100%;
+
+        & + i {
+          display: block;
+          position: absolute;
+          width: 26px;
+          height: 26px;
+          background: $ux2-fuchsia;
+          visibility: visible !important;
+          border-radius: 15%;
+        }
+
+        & + i:after {
+          content: "";
+          display: block;
+          border-bottom: 3px solid $ux2-black;
+          border-right: 3px solid $ux2-black;
+          transform: rotate(45deg);
+          width: 10px;
+          height: 20px;
+          visibility: visible;
+          position: absolute;
+          top: 0;
+          left: 8px;
+        }
+
+        &:checked + i:after {
+          border-color: $ux2-white;
+        }
+      }
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .button-pink-block {
+      @include linear-h-gradient(rgba($ux2-fuchsia-dark, 1.0), rgba($ux2-fuchsia, 1.0));
+      color: $ux2-white;
+      font-weight: bold;
+    }
+
+    .pre-existing {
+      line-height: 50px;
+      text-align: right;
+
+      a {
+        display: block;
+        margin: auto 0;
+        color: $ux2-slate-light;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+}
