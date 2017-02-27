@@ -1,0 +1,73 @@
+﻿@import '../partials/sage_bootstrap_variables';
+@import '../partials/common_mixins';
+@import '_ux2_colours';
+
+.sticky-header {
+  display: none;
+  height: 50px;
+  position: relative;
+
+  .sticky-header-inner {
+    @include linear-h-gradient(rgba($ux2-fuchsia-dark, 1.0), rgba($ux2-fuchsia, 1.0));
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+    z-index: 9998;
+    color: $ux2-white;
+
+    .title {
+      line-height: 50px;
+      font-weight: bold;
+    }
+
+    .buttons {
+      text-align: right;
+      line-height: 50px;
+
+      .button-pink-block {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 3px 30px;
+        width: 170px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@media(max-width: $screen-xs-max) {
+  .sticky-header {
+    height: 60px;
+
+    .sticky-header-inner {
+      .title {
+        font-size:12px;
+        line-height:normal;
+        text-align:center;
+      }
+
+      .buttons {
+        margin-top:6px;
+        text-align: center;
+        line-height: normal;
+
+        .button-pink-block {
+          padding: 1px 0px 1px 15px;
+          width: 120px;
+          margin-left: 20px;
+
+          &:before{
+            width:14px;
+          }
+
+          &:after{
+            width:9px;
+            height:9px;
+          }
+        }
+      }
+    }
+  }
+}

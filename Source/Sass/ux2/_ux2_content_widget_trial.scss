@@ -73,12 +73,6 @@
       }
     }
 
-    .button-pink-block {
-      @include linear-h-gradient(rgba($ux2-fuchsia-dark, 1.0), rgba($ux2-fuchsia, 1.0));
-      color: $ux2-white;
-      font-weight: bold;
-    }
-
     .pre-existing {
       line-height: 50px;
       text-align: right;

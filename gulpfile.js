@@ -40,6 +40,7 @@ var project = {
     "bower_components/slick-carousel/slick/slick.js",
     "bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js",
     "bower_components/bootstrap-validator/js/validator.js",
+    "bower_components/js-cookie/src/js.cookie.js",
     "Source/Scripts/Libs/*.js"
   ],
   scriptsAngularSrc: [

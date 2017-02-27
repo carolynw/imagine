@@ -28,7 +28,7 @@
     "angular-mocks": "^1.5.8",
     "font-awesome": "^4.7.0",
     "slick-carousel": "^1.6.0",
-    "ScrollMagic": "~2.0.5"
+    "ScrollMagic": "~2.0.5",
+    "js-cookie": "^2.1.3"
   }
-  
 }
