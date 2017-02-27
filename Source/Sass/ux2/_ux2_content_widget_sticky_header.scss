@@ -32,6 +32,13 @@
         padding: 3px 30px;
         width: 170px;
         margin-left: 20px;
+        color: $ux2-white;
+        border-color: $ux2-white;
+
+        &.inverse{
+          color: $ux2-fuchsia;
+          border-color: $ux2-fuchsia;
+        }
       }
     }
   }
@@ -43,13 +50,14 @@
 
     .sticky-header-inner {
       .title {
-        font-size:12px;
-        line-height:normal;
-        text-align:center;
+        font-size: 12px;
+        line-height: normal;
+        text-align: center;
+        margin-top:2px;
       }
 
       .buttons {
-        margin-top:6px;
+        margin-top: 4px;
         text-align: center;
         line-height: normal;
 
@@ -58,13 +66,13 @@
           width: 120px;
           margin-left: 20px;
 
-          &:before{
-            width:14px;
+          &:before {
+            width: 14px;
           }
 
-          &:after{
-            width:9px;
-            height:9px;
+          &:after {
+            width: 9px;
+            height: 9px;
           }
         }
       }
