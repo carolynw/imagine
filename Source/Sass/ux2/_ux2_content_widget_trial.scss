@@ -6,13 +6,14 @@
     margin: 50px 0;
 
     label {
+      position:relative;
       margin-bottom: 40px;
 
       &.focus-within {
         color: $ux2-fuchsia;
       }
 
-      input[type="text"] {
+      input[type="text"], input[type="password"] {
         display: block;
         width: 100%;
         border-top: none;
@@ -28,34 +29,38 @@
 
       input[type="checkbox"] {
         visibility: hidden;
-        position: relative;
-        display: block;
-        width: 50px;
-        float: left;
-        height: 100%;
+        height:0;
+        width:0;
 
         & + i {
+          position:relative;
+          float:left;
+          display:block;
+          margin-left:25px;
+          width:50px;
+          min-height:25px;
+        }
+
+        & + i:before {
+          content: "";
           display: block;
           position: absolute;
           width: 26px;
           height: 26px;
           background: $ux2-fuchsia;
-          visibility: visible !important;
           border-radius: 15%;
         }
 
         & + i:after {
           content: "";
           display: block;
-          border-bottom: 3px solid $ux2-black;
-          border-right: 3px solid $ux2-black;
-          transform: rotate(45deg);
+          position: absolute;
+          left: 8px;
           width: 10px;
           height: 20px;
-          visibility: visible;
-          position: absolute;
-          top: 0;
-          left: 8px;
+          transform: rotate(45deg);
+          border-bottom: 3px solid $ux2-fuchsia-dark;
+          border-right: 3px solid $ux2-fuchsia-dark;
         }
 
         &:checked + i:after {
