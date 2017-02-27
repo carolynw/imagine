@@ -15,18 +15,19 @@ sageApp.modules.register("ux2Hacks", function ($) {
     var tracking = Cookies.get("sticky-header");
 
     if (tracking !== void 0) {
-      var $show = $("[data-sticky-header-show='" + tracking + "']");
-
-      // if($show.length){
-      //   Cookies.remove("sticky-header");
-        $show.show();
-      // }
+      $("[data-sticky-header-show='" + tracking + "']").show();
     }
 
     $("body").on("click", "[data-sticky-header-trigger]", function () {
       var value = $(this).data("sticky-header-trigger");
-      console.log(value);
+      $("[data-sticky-header-show='" + tracking + "']").show();
       Cookies.set("sticky-header", value);
+    });
+
+    $("body").on("click", "[data-sticky-header-close]", function () {
+      var value = $(this).data("sticky-header-close");
+      Cookies.remove("sticky-header");
+      $("[data-sticky-header-show='" + value + "']").hide();
     });
   }
 
