@@ -33,17 +33,13 @@ sageApp.modules.register("ux2Hacks", function ($) {
 
     new Waypoint.Inview({
       element: $("[data-sticky-header-autoclose]")[0],
-      entered: function(){
+      entered: function () {
         var value = $(this.element).data("sticky-header-autoclose");
-        $("[data-sticky-header-show='" + value + "']").removeClass("open");
+        $("[data-sticky-header-show='" + value + "'] .sticky-header-inner").addClass("soft-hide");
       },
-      exited: function(){
-        var wasOpen = Cookies.get("sticky-header");
-
-        if(wasOpen){
-          var value = $(this.element).data("sticky-header-autoclose");
-          $("[data-sticky-header-show='" + value + "']").addClass("open");
-        }
+      exited: function () {
+        var value = $(this.element).data("sticky-header-autoclose");
+        $("[data-sticky-header-show='" + value + "'] .sticky-header-inner.soft-hide").removeClass("soft-hide");
       }
     });
   }

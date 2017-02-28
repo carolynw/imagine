@@ -5,10 +5,9 @@
 .sticky-header {
   display: none;
   height: 50px;
-  position: relative;
 
-  &.open{
-    display:block;
+  &.open {
+    display: block;
   }
 
   .sticky-header-inner {
@@ -20,6 +19,13 @@
     width: 100%;
     z-index: 9998;
     color: $ux2-white;
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+
+    &.soft-hide {
+      transform: scaleY(0);
+    }
 
     .sticky-header-close {
       margin: 10px 28px 10px 22px;
