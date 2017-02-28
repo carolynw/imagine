@@ -41,6 +41,7 @@ var project = {
     "bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js",
     "bower_components/bootstrap-validator/js/validator.js",
     "bower_components/js-cookie/src/js.cookie.js",
+    "bower_components/waypoints/lib/jquery.waypoints.js",
     "Source/Scripts/Libs/*.js"
   ],
   scriptsAngularSrc: [
