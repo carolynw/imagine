@@ -31,14 +31,21 @@ sageApp.modules.register("ux2Hacks", function ($) {
       $("[data-sticky-header-show='" + value + "']").removeClass("open");
     });
 
-    $("[data-sticky-header-autoclose]").waypoint({
-      handler: function () {
+    new Waypoint.Inview({
+      element: $("[data-sticky-header-autoclose]")[0],
+      entered: function(){
         var value = $(this.element).data("sticky-header-autoclose");
-        Cookies.remove("sticky-header");
         $("[data-sticky-header-show='" + value + "']").removeClass("open");
       },
-      offset: "80%"
-    })
+      exited: function(){
+        var wasOpen = Cookies.get("sticky-header");
+
+        if(wasOpen){
+          var value = $(this.element).data("sticky-header-autoclose");
+          $("[data-sticky-header-show='" + value + "']").addClass("open");
+        }
+      }
+    });
   }
 
   return {

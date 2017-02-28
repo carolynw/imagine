@@ -42,6 +42,7 @@ var project = {
     "bower_components/bootstrap-validator/js/validator.js",
     "bower_components/js-cookie/src/js.cookie.js",
     "bower_components/waypoints/lib/jquery.waypoints.js",
+    "bower_components/waypoints/lib/shortcuts/inview.js",
     "Source/Scripts/Libs/*.js"
   ],
   scriptsAngularSrc: [
